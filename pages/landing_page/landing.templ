@@ -1,0 +1,24 @@
+package landing_page
+
+import (
+    "github.com/arjunrajpal123/go_pong/components/pong"
+)
+
+templ Content(name string) {
+	<!DOCTYPE html>
+    <html lang="en-US">
+    <head> 
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>PONG GAME</title> 
+    <link rel="stylesheet" href="./css/style.css"/>
+</head> 
+    <body>
+
+    <div class="container">
+      @pong.Board()
+      </div>
+  
+    </body>
+    </html>
+}
